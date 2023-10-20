@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    --color-text: black;
+    --color-content: "#8080801f";
+  }
+
+  :root[data-theme="dark"] {
+    --color-text: white;
+    --color-content: black;
+  }
+}
+
+:root {
+  --title-color: hsl(0, 0%, 40%);
+  --text-color: hsl(0, 0%, 50%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(0, 0%, 87%);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
